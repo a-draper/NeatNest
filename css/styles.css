@@ -10879,7 +10879,11 @@ p {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+#mainNav.scrolled{
+  background-color: fcd7e0 !important;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;

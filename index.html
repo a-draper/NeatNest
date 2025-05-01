@@ -202,8 +202,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-grid gap-2 col-4 mx-auto mt-5">
-                        <a class="btn btn-primary btn-xl text-uppercase" href="https://neatnestcleaning.setmore.com">Schedule A Service</a>
+                    <div class="d-grid gap-2 mx-auto mt-5" style="max-width: 320px;">
+                        <a class="btn btn-primary btn-xl text-uppercase w-100 text-center" href="https://neatnestcleaning.setmore.com">Schedule A Service</a>
                     </div>
                 </div>
             </div>
@@ -659,6 +659,18 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            window.addEventListener("scroll", function () {
+              const nav = document.getElementById("mainNav");
+              if (window.scrolly > 10) {
+                nav.classList.add("scrolled");
+              } else {
+                nav.classList.remove("scrolled");
+              }
+            });
+          </script>
+          
     
     <!-- Basic Refresh Modal -->
 <div class="modal fade" id="serviceModal1" tabindex="-1" aria-hidden="true">
