@@ -11436,3 +11436,11 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-top: 35px;
   
 }
+section#contact li.additional-service-price {
+  color: #000 !important; /* or use your preferred dark text color */
+}
+
+a[href^="mailto"] {
+  color: inherit;
+}
+
