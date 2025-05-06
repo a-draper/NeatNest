@@ -11448,3 +11448,32 @@ a[href^="mailto"] {
   font-family: 'Ms Madi', sans-serif;
   letter-spacing: 2.5px;
 }
+
+.mobile-about {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.mobile-about h2 {
+  font-size: 2rem;
+  color: #fc2ec1;
+}
+
+.mobile-about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .mobile-about h2 {
+    font-size: 1.5rem;
+  }
+
+  .mobile-about p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
