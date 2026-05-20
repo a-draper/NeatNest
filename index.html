@@ -19,6 +19,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Ms+Madi&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -36,11 +37,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services"><strong>Cleaning Packages</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio"><strong>Additional Services</strong></a></li> 
-                        <li class="nav-item"><a class="nav-link" href="#about"><strong>About</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team"><strong>Team</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"><strong>Contact</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" style="color: #fc2ec1;"><strong>About</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services" style="color: #fc2ec1;"><strong>Services</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" style="color: #fc2ec1;"><strong>Locations</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team" style="color: #fc2ec1;"><strong>Team</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" style="color: #fc2ec1;"><strong>Contact</strong></a></li>
                     </ul>
                 </div>
             </div>
@@ -75,16 +76,161 @@
                     style="width: 100%; max-width: 90vw; height:auto; display: block; margin: 1rem auto;">
             </div>
         </section>
+<!-- How It Works -->
+<section class="page-section" id="how-it-works">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">How It Works</h2>
+            <h3 class="section-subheading text-muted">Getting started is simple — here's what to expect.</h3>
+        </div>
+        <div class="row text-center mt-5">
+
+            <!-- Step 1 -->
+            <div class="col-md-4 mb-5">
+                <div class="how-it-works-step">
+                    <div class="step-circle mx-auto mb-4">
+                        <span>1</span>
+                    </div>
+                    <h4 class="my-3">Request a Quote</h4>
+                    <p class="text-muted">Fill out our contact form or give us a call. Tell us a little about your space, what you're looking for, and which county you're in. No commitment required!</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-md-4 mb-5">
+                <div class="how-it-works-step">
+                    <div class="step-circle mx-auto mb-4">
+                        <span>2</span>
+                    </div>
+                    <h4 class="my-3">We'll Be In Touch</h4>
+                    <p class="text-muted">A member of the NeatNest team will reach out within 24 hours to go over your needs, answer any questions, and provide a personalized quote tailored to your home or business.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-md-4 mb-5">
+                <div class="how-it-works-step">
+                    <div class="step-circle mx-auto mb-4">
+                        <span>3</span>
+                    </div>
+                    <h4 class="my-3">Book Your Clean</h4>
+                    <p class="text-muted">Once you're happy with your quote, we'll get you on the schedule. Sit back, relax, and let NeatNest take it from there!</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-2">
+            <a class="btn btn-primary btn-xl text-uppercase me-3" href="#contact">Get a Custom Quote</a>
+            <a class="btn btn-outline-secondary btn-xl text-uppercase" href="#contact">Book Now</a>
+        </div>
+    </div>
+</section>
         <!-- Services-->
-        <section class="page-section" id="services">
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">Your revitalization starts here. Click each icon for full details!</h3>
+        </div>
+        <div class="row text-center">
+
+            <!-- Housekeeping -->
+            <div class="col-md-4">
+                <a class="service-link" data-bs-toggle="modal" href="#serviceModal1">
+                    <div class="service-hover">
+                        <div class="service-hover-content">
+                            <i class="fas fa-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <img class="service-icon" src="assets/img/Sparkle_Transparent.png" alt="Housekeeping Icon" height="250px">
+                </a>
+                <h4 class="my-3">Housekeeping</h4>
+                <p class="text-muted">Keep your home feeling fresh and tidy with routine cleaning tailored to your lifestyle—ideal for weekly or biweekly upkeep.</p>
+            </div>
+
+            <!-- Deep Cleaning -->
+            <div class="col-md-4">
+                <a class="service-link" data-bs-toggle="modal" href="#serviceModal2">
+                    <div class="service-hover">
+                        <div class="service-hover-content">
+                            <i class="fas fa-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <img class="service-icon" src="assets/img/Diamond_Transparent.png" alt="Deep Cleaning Icon" height="250px">
+                </a>
+                <h4 class="my-3">Deep Cleaning</h4>
+                <p class="text-muted">Go beyond the surface with a detailed top-to-bottom clean. Perfect for season changes, special occasions, or when your home needs a serious refresh.</p>
+            </div>
+
+            <!-- Move In/Out Cleaning -->
+            <div class="col-md-4">
+                <a class="service-link" data-bs-toggle="modal" href="#serviceModal3">
+                    <div class="service-hover">
+                        <div class="service-hover-content">
+                            <i class="fas fa-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <img class="service-icon" src="assets/img/House_Transparent.png" alt="Move In/Out Cleaning Icon" height="250px">
+                </a>
+                <h4 class="my-3">Move In/Out Cleaning</h4>
+                <p class="text-muted">Starting fresh or leaving a place spotless? We handle the details so you can focus on your move.</p>
+            </div>
+
+            <!-- Commercial Cleaning -->
+            <div class="col-md-4 mt-5">
+                <a class="service-link" data-bs-toggle="modal" href="#serviceModal4">
+                    <div class="service-hover">
+                        <div class="service-hover-content">
+                            <i class="fas fa-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <img class="service-icon" src="assets/img/City_Transparent.png" alt="Commercial Cleaning Icon" height="250px">
+                </a>
+                <h4 class="my-3">Commercial Cleaning</h4>
+                <p class="text-muted">Professional cleaning for offices, retail spaces, and businesses. A clean workspace makes a lasting impression.</p>
+            </div>
+
+            <!-- Short-Term Rental Cleaning -->
+            <div class="col-md-4 mt-5">
+                <a class="service-link" data-bs-toggle="modal" href="#serviceModal5">
+                    <div class="service-hover">
+                        <div class="service-hover-content">
+                            <i class="fas fa-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <img class="service-icon" src="assets/img/VacationRental_Transparent.png" alt="Short-Term Rental Cleaning Icon" height="250px">
+                </a>
+                <h4 class="my-3">Short-Term Rental Cleaning</h4>
+                <p class="text-muted">Keep your Airbnb or VRBO guest-ready between every stay. Fast, thorough, and reliable turnaround cleaning.</p>
+            </div>
+
+            <!-- Organization -->
+            <div class="col-md-4 mt-5">
+                <a class="service-link" data-bs-toggle="modal" href="#serviceModal6">
+                    <div class="service-hover">
+                        <div class="service-hover-content">
+                            <i class="fas fa-plus fa-2x text-white"></i>
+                        </div>
+                    </div>
+                    <img class="service-icon" src="assets/img/Flower_Transparent.png" alt="Organization Icon" height="250px">
+                </a>
+                <h4 class="my-3">Organization</h4>
+                <p class="text-muted">Refresh your space and clear the clutter with custom organization that brings calm to your chaos. Perfect for closets, pantries, playrooms, and more!</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+        <!-- Services-->
+        <!-- <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Services</h2>
                     <h3 class="section-subheading text-muted">Your revitalization starts here. Click each icon for full details!</h3>
                 </div>
-                <div class="row text-center">
+                <div class="row text-center"> -->
                     <!-- Basic Refresh -->
-                    <div class="col-md-4">
+                    <!--<div class="col-md-4">
                         <a class="service-link" data-bs-toggle="modal" href="#serviceModal1">
                             <div class="service-hover">
                                 <div class="service-hover-content">
@@ -93,12 +239,12 @@
                             </div>
                             <img class="service-icon" src="assets/img/Flower_Transparent.png" alt="Basic Refresh Icon" height="250px">
                         </a>
-                        <h4 class="my-3">Basic Refresh</h4>
-                        <p class="text-muted">Perfect for busy households in need of a reliable reset, this package is simple, efficient, and perfect for keeping things feeling fresh. </p>
-                    </div>
+                        <h4 class="my-3">Organization</h4>
+                        <p class="text-muted">Refresh your space and clear the clutter with custom organization that brings calm to your chaos. Perfect for closets, pantries, playrooms, and more!</p>
+                    </div> -->
 
                     <!-- Signature Refresh -->
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <a class="service-link" data-bs-toggle="modal" href="#serviceModal2">
                             <div class="service-hover">
                                 <div class="service-hover-content">
@@ -107,12 +253,12 @@
                             </div>
                             <img class="service-icon" src="assets/img/Sparkle_Transparent.png" alt="Signature Refresh Icon" height="250px">
                         </a>
-                        <h4 class="my-3">Signature Refresh</h4>
-                        <p class="text-muted">Our most popular option for a reason, the Signature Refresh delivers a balanced, more comprehensive clean that helps your home feel refreshed and reenergized.</p>
-                    </div>
+                        <h4 class="my-3">Housekeeping</h4>
+                        <p class="text-muted">Keep your home feeling fresh and tidy with routine cleaning tailored to your lifestyle—ideal for weekly or biweekly upkeep.</p>
+                    </div> -->
 
                     <!-- Luxe Refresh -->
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <a class="service-link" data-bs-toggle="modal" href="#serviceModal3">
                             <div class="service-hover">
                                 <div class="service-hover-content">
@@ -121,24 +267,70 @@
                             </div>
                             <img class="service-icon" src="assets/img/Diamond_Transparent.png" alt="Luxe Refresh Icon" height="250px">
                         </a>
-                        <h4 class="my-3">Luxe Refresh</h4>
-                        <p class="text-muted">The Luxe Refresh is the ultimate home transformation. It offers full-home revitalization with elevated care that leaves every corner feeling exceptional.</p>
+                        <h4 class="my-3">Deep Cleaning</h4>
+                        <p class="text-muted">Go beyond the surface with a detailed top-to-bottom clean. Perfect for season changes, special occasions, or when your home needs a serious refresh.</p>
                     </div>
                 </div>
-            </div>
+            </div> 
             
-        </section>
+        </section> -->
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Additional Services</h2>
-                    <h3 class="section-subheading text-muted">High quality & catered to your needs.</h3>
-                    <p>These services can be scheduled individually or added on to one of our home cleaning packages!</p>
+                    <h2 class="section-heading text-uppercase">Locations We Serve</h2>
+                    <h3 class="section-subheading text-muted">Proudly serving homes and businesses throughout our local community.</h3>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
+                    <!-- Weber County -->
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/WeberCounty.png" alt="Weber County" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Weber County</div>
+                                <div class="portfolio-caption-subheading text-muted">Click to see cities we serve</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Davis County -->
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/DavisCounty.png" alt="Davis County" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Davis County</div>
+                                <div class="portfolio-caption-subheading text-muted">Click to see cities we serve</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Utah County -->
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/UtahCounty.png" alt="Utah County" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Utah County</div>
+                                <div class="portfolio-caption-subheading text-muted">Click to see cities we serve</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        Portfolio item 1
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
@@ -152,8 +344,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
+                    <div class="col-lg-4 col-sm-6 mb-4"> -->
+                        <!-- Portfolio item 2
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
@@ -167,8 +359,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
+                    <div class="col-lg-4 col-sm-6 mb-4"> -->
+                        <!-- Portfolio item 3
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
                                 <div class="portfolio-hover">
@@ -182,8 +374,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0"> -->
+                        <!-- Portfolio item 4
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
@@ -197,8 +389,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0"> -->
+                        <!-- Portfolio item 5
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
                                 <div class="portfolio-hover">
@@ -212,8 +404,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
+                    <div class="col-lg-4 col-sm-6"> -->
+                        <!-- Portfolio item 6 
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
@@ -230,7 +422,7 @@
                     <div class="d-grid gap-2 mx-auto mt-5" style="max-width: 320px;">
                         <a class="btn btn-primary btn-xl text-uppercase w-100 text-center" href="https://neatnestcleaning.setmore.com">Schedule A Service</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- About-->
@@ -295,52 +487,189 @@
                 </ul>
             </div>
         </section> -->
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Meet The Owner</h2>
-                    <h3 class="section-subheading text-muted">We clean to care – for people, not just places.</h3>
-                </div>
-                <div class="row">
-                    <!-- <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div> -->
-                    <div class="center-headshot-picture">
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle pink-border" src="assets/img/Abby_Headshot.png" alt="..." />
-                                <h4>Abby Pendleton</h4>
-                                <p class="text-muted">Founder, CEO</p>
-                                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/_abbypendleton_/" aria-label="Abby Pendleton Twitter Profile"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/abby.draper.58/" aria-label="Abby Pendleton Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-dark btn-social mx-2" href="www.linkedin.com/in/abigail-pendleton-26b41b26a" aria-label="Abby Pendleton LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+<!-- Testimonials -->
+<section class="page-section" id="testimonials">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">What Our Clients Say</h2>
+            <h3 class="section-subheading text-muted">We let our work speak for itself.</h3>
+        </div>
+        <div class="mt-5">
+            <div class="swiper testimonialsSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Jack F -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
+                            <p class="testimonial-text">"Abby and Madi are absolutely the best! The service is very thorough at a very fair cost."</p>
+                            <p class="testimonial-author">— Jack F.</p>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+
+                    <!-- Debbie F -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The BEST house cleaning we have ever had!!!"</p>
+                            <p class="testimonial-author">— Debbie F.</p>
                         </div>
-                    </div> -->
+                    </div>
+
+                    <!-- Patty W -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Madi does a great job and is very thorough. We appreciate her kindness and willingness to change things up a bit from month to month."</p>
+                            <p class="testimonial-author">— Patty W.</p>
+                        </div>
+                    </div>
+
+                    <!-- Amaris M -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"We've had a wonderful experience with Abby and her team. She is incredibly responsive and always quick to adjust to any changes or requests we have, which makes scheduling and communication so easy. Her employees are amazing, professional, thorough, and consistently do a fantastic job. It's clear that Abby takes great pride in her work and truly cares about providing high-quality service."</p>
+                            <p class="testimonial-author">— Amaris M.</p>
+                        </div>
+                    </div>
+
+                    <!-- Shae M -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"They do such a great job, very reliable and communicates well."</p>
+                            <p class="testimonial-author">— Shae M.</p>
+                        </div>
+                    </div>
+
+                    <!-- Bobbie K -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Abby and her crew are amazing! Love working with them!"</p>
+                            <p class="testimonial-author">— Bobbie K.</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"><strong style="font-size: 1rem; color: #fc2ec1;">Hi friends! My name is Abby.</strong> I’m probably one of the few people out there who doesn’t mind cleaning—and honestly, I love organizing. I know how crazy life can get, and I started NeatNest to help take one thing off your plate. Cleaning might be a necessary evil, but it makes such a big difference in how your home feels. Everyone deserves a space that’s calm and comfortable, not overwhelming.</p>
-                        <p style="font-weight: normal;">I’m here to help you spend less time stressing about messes and more time doing what you actually enjoy. If that sounds like something you need, reach out and <strong style="color: #fc2ec1;">let’s make your space feel fresh again.</strong></p>
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Team-->
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Meet Our Team</h2>
+            <h3 class="section-subheading text-muted">We clean to care — for people, not just places.</h3>
+        </div>
+        <div class="row justify-content-center mt-5">
+
+            <!-- Abby -->
+            <div class="col-lg-4 col-sm-6 text-center mb-5">
+                <div class="team-member">
+                    <a data-bs-toggle="modal" href="#teamModal1" style="cursor: pointer;">
+                        <img class="mx-auto rounded-circle pink-border" src="assets/img/AbbyPendleton.jpg" alt="Abby Pendleton" />
+                    </a>
+                    <h4>Abby Pendleton</h4>
+                    <p class="text-muted">Founder & CEO</p>
                 </div>
             </div>
+
+            <!-- Madi -->
+            <div class="col-lg-4 col-sm-6 text-center mb-5">
+                <div class="team-member">
+                    <a data-bs-toggle="modal" href="#teamModal2" style="cursor: pointer;">
+                        <img class="mx-auto rounded-circle pink-border" src="assets/img/MadiThompson.PNG" alt="Madi Thompson" />
+                    </a>
+                    <h4>Madi Thompson</h4>
+                    <p class="text-muted">Lead Cleaner</p>
+                </div>
+            </div>
+
+            <!-- Reagan -->
+            <div class="col-lg-4 col-sm-6 text-center mb-5">
+                <div class="team-member">
+                    <a data-bs-toggle="modal" href="#teamModal3" style="cursor: pointer;">
+                        <img class="mx-auto rounded-circle pink-border" src="assets/img/ReaganBolos.jpg" alt="Reagan Bolos" />
+                    </a>
+                    <h4>Reagan Bolos</h4>
+                    <p class="text-muted">Cleaner</p>
+                </div>
+            </div>
+
+            <!-- Sofi -->
+            <div class="col-lg-4 col-sm-6 text-center mb-5">
+                <div class="team-member">
+                    <a data-bs-toggle="modal" href="#teamModal4" style="cursor: pointer;">
+                        <img class="mx-auto rounded-circle pink-border" src="assets/img/SofiZendejas.png" alt="Sofi Zendejas" />
+                    </a>
+                    <h4>Sofi Zendejas</h4>
+                    <p class="text-muted">Cleaner</p>
+                </div>
+            </div>
+
+            <!-- Morgan -->
+            <div class="col-lg-4 col-sm-6 text-center mb-5">
+                <div class="team-member">
+                    <a data-bs-toggle="modal" href="#teamModal5" style="cursor: pointer;">
+                        <img class="mx-auto rounded-circle pink-border" src="assets/img/MorganStoddard.jpg" alt="Morgan Stoddard" />
+                    </a>
+                    <h4>Morgan Stoddard</h4>
+                    <p class="text-muted">Lead Cleaner</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="large text-muted"><em>"At NeatNest, we're more than just a cleaning crew — we're a team of people who genuinely care about the homes and lives we're a part of. We take pride in delivering a consistent, thorough, and trustworthy experience every single time, because your home deserves nothing less."</em></p>
+            </div>
+        </div>
+    </div>
+</section>
         </section>
         <!-- Clients-->
         <!-- <div class="py-5">
@@ -361,29 +690,124 @@
                 </div>
             </div>
         </div> -->
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase" style="color: #fc2ec1;">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">We'd love to hear from  you!</h3>
-                        <p style="margin-bottom: 0.2rem;"><strong>Have questions about our cleaning or ogranization services?</strong></p>
-                        <p style="margin-top: 0.2rem;"><strong>Send us a message or schedule an appointment below!</strong></p>
-                    <br>
-                        <ul class="list-inline">
-                            <li class="additional-service-price">
-                                <strong>Phone:</strong>
-                                <a href="tel:+18016638916" style="color: inherit;">(801) 663-8916</a>
-                            </li>
-                            <li class="additional-service-price">
-                                <strong>Email:</strong>
-                                <a href="mailto:neatnestresidential@gmail.com">neatnestresidential@gmail.com</a>
-                            </li>
-                    </ul>
-                    <br>
-                    <br>
-                    <a class="btn btn-primary btn-xl text-uppercase" href="https://neatnestcleaning.setmore.com">Schedule A Service</a>
-                </div>
+<!-- Contact Top -->
+<section class="page-section bg-white" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase" style="color: #fc2ec1;">Let's Get Started</h2>
+            <h3 class="section-subheading text-muted">We'd love to hear from you!</h3>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="text-center mt-4">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4">
+                    <i class="fas fa-phone me-2" style="color: #fc2ec1;"></i>
+                    <strong><a href="tel:+18016638916" style="color: inherit;">(801) 663-8916</a></strong>
+                </li>
+                <li class="list-inline-item">
+                    <i class="fas fa-envelope me-2" style="color: #fc2ec1;"></i>
+                    <strong><a href="mailto:neatnestresidential@gmail.com" style="color: inherit;">neatnestresidential@gmail.com</a></strong>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Divider -->
+        <hr style="border-color: #f0f0f0; margin: 2.5rem auto; max-width: 600px;">
+
+        <!-- Book Now Path -->
+        <div class="text-center">
+            <h4 style="color: #fc2ec1;">Ready to Book?</h4>
+            <p class="text-muted">Select your county to schedule directly online. A member of our team will confirm your custom quote before your appointment.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
+                <a class="btn btn-primary btn-xl text-uppercase" href="https://neatnestcleaning.setmore.com/abigail" target="_blank">
+                    Book Now — Weber County
+                </a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="https://neatnestcleaning.setmore.com/abigail" target="_blank">
+                    Book Now — Davis County
+                </a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="https://neatnestspringvi11e.setmore.com/neatnestspringvi11e" target="_blank">
+                    Book Now — Utah County
+                </a>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr style="border-color: #f0f0f0; margin: 2.5rem auto; max-width: 600px;">
+
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="page-section bg-light">
+    <div class="container">
+
+        <!-- Custom Quote Intro -->
+        <div class="text-center mb-4">
+            <h4 style="color: #fc2ec1;">Prefer a Custom Quote First?</h4>
+            <p class="text-muted">Fill out the form below and we'll reach out <strong>within 24 hours</strong> with a personalized quote tailored to your home or business.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form action="https://formspree.io/f/mpqnwdza" method="POST">
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <input class="form-control" type="text" name="name" placeholder="Your Name *" required />
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <input class="form-control" type="tel" name="phone" placeholder="Your Phone Number *" required />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <input class="form-control" type="email" name="email" placeholder="Your Email Address *" required />
+                    </div>
+
+                    <!-- Service Type -->
+                    <div class="mb-3">
+                        <select class="form-control" name="service" required>
+                            <option value="" disabled selected>Select a Service *</option>
+                            <option value="Housekeeping">Housekeeping</option>
+                            <option value="Deep Cleaning">Deep Cleaning</option>
+                            <option value="Move In/Out Cleaning">Move In/Out Cleaning</option>
+                            <option value="Commercial Cleaning">Commercial Cleaning</option>
+                            <option value="Short-Term Rental Cleaning">Short-Term Rental Cleaning</option>
+                            <option value="Organization">Organization</option>
+                            <option value="Custom Quote">Custom Quote</option>
+                            <option value="Other">Other / Not Sure Yet</option>
+                        </select>
+                    </div>
+
+                    <!-- County -->
+                    <div class="mb-3">
+                        <select class="form-control" name="county" required>
+                            <option value="" disabled selected>Select Your County *</option>
+                            <option value="Weber County">Weber County</option>
+                            <option value="Davis County">Davis County</option>
+                            <option value="Utah County">Utah County</option>
+                            <option value="Other">Other / Not Sure</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-4">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Tell us a little about your space and what you're looking for! *" required></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
                 <!-- * * * * * * * * * * * * * * *-->
                 <!-- * * SB Forms Contact Form * *-->
                 <!-- * * * * * * * * * * * * * * *-->
@@ -446,7 +870,23 @@
                 </form>
             </div> -->
         </section>
-
+<!-- Call To Action -->
+<section class="page-section" style="background-color: #fc2ec1;">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase text-white">Ready for a Cleaner Space?</h2>
+            <h3 class="section-subheading" style="color: rgba(255,255,255,0.85);">Let NeatNest take it from here. Your fresh start is just one step away.</h3>
+            <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                <a class="btn btn-light btn-xl text-uppercase" href="#contact">
+                    Get a Custom Quote
+                </a>
+                <a class="btn btn-outline-light btn-xl text-uppercase" href="https://neatnestcleaning.setmore.com/abigail" target="_blank">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -464,221 +904,168 @@
                 </div>
             </div>
         </footer>
+
         <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Organization</h2>
-                                    <p class="item-intro text-muted">Personalized to you. Styled to elevate. Built for your budget.</p>
-                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." /> -->
-                                    <p>Choose the space—closets, cabinets, shelves, or even a small room—and we’ll take care of the rest. After selecting the area you'd like organized, you'll have a quick consultation with a NeatNest cleaning rep to discuss your goals and preferences. You'll receive a personalized quote based on the size, scope, and estimated time to complete the project. If you have your own bins or containers, we’re happy to use them—otherwise, NeatNest will provide stylish, functional organizers that won’t break the bank and will be included in your final cost. Every organization service is customized to your needs and designed to maximize function, flow, and satisfaction.</p>
-                                    <ul class="list-inline">
-                                        <li class="additional-service-price">
-                                            <strong>Base Price:</strong>
-                                            Ranges between $50-$250
-                                        </li>
-                                        <li>
-                                            <!-- <strong>Category:</strong> -->
-                                            Price adjusted based on size of space, extent of organization needed, and estimated time to complete.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close 
-                                    </button>
-                                </div>
-                            </div>
+<!-- Weber County Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body text-center">
+                            <h2 class="text-uppercase">Weber County</h2>
+                            <p class="item-intro text-muted">Cities we proudly serve in Weber County.</p>
+                            <ul class="list-unstyled" style="columns: 2; text-align: center; line-height: 2.5; margin-top: 1.5rem;">
+                                <li>Eden</li>
+                                <li>Farr West</li>
+                                <li>Harrisville</li>
+                                <li>Hooper</li>
+                                <li>Huntsville</li>
+                                <li>Liberty</li>
+                                <li>Marriott-Slaterville</li>
+                                <li>North Ogden</li>
+                                <li>Ogden</li>
+                                <li>Plain City</li>
+                                <li>Pleasant View</li>
+                                <li>Riverdale</li>
+                                <li>Roy</li>
+                                <li>South Ogden</li>
+                                <li>Uintah</li>
+                                <li>Washington Terrace</li>
+                                <li>West Haven</li>
+                            </ul>
+                            <p class="mt-5" style="color: #fc2ec1;"><strong>Don't see your city? Give us a call — we may still be able to help!</strong></p>
+                            <button class="btn btn-primary btn-xl text-uppercase mt-4" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Refrigerator</h2>
-                                    <p class="item-intro text-muted">A fresh start for your food.</p>
-                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." /> -->
-                                    <p>This service includes a complete cleaning of the interior of the fridge and freezer.We use safe, food-friendly products to remove spills, stains, and stubborn buildup—leaving your fridge and freezer fresh, spotless, and ready to store your food. </p>
-                                    <ul class="list-inline">
-                                        <li class="additional-service-price">
-                                            <strong>Base Price:</strong>
-                                            $49.99
-                                        </li>
-                                        <li>
-                                            <!-- <strong>Category:</strong> -->
-                                            Price adjusted based on size of fridge/freezer, level of cleanliness, and estimated time to clean.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
+    </div>
+</div>
+
+<!-- Davis County Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body text-center">
+                            <h2 class="text-uppercase">Davis County</h2>
+                            <p class="item-intro text-muted">Cities we proudly serve in Davis County.</p>
+                            <ul class="list-unstyled" style="columns: 2; text-align: center; line-height: 2.5; margin-top: 1.5rem;">
+                                <li>Bountiful</li>
+                                <li>Centerville</li>
+                                <li>Clearfield</li>
+                                <li>Clinton</li>
+                                <li>Farmington</li>
+                                <li>Fruit Heights</li>
+                                <li>Kaysville</li>
+                                <li>Layton</li>
+                                <li>North Salt Lake</li>
+                                <li>South Weber</li>
+                                <li>Sunset</li>
+                                <li>Syracuse</li>
+                                <li>West Bountiful</li>
+                                <li>West Point</li>
+                                <li>Woods Cross</li>
+                            </ul>
+                            <p class="mt-5" style="color: #fc2ec1;"><strong>Don't see your city? Give us a call — we may still be able to help!</strong></p>
+                            <button class="btn btn-primary btn-xl text-uppercase mt-4" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Kitchen Cabinets</h2>
-                                    <p class="item-intro text-muted">Making your cabinets clean, clear, and kitchen-ready!</p>
-                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." /> -->
-                                    <p>We tackle spills, crumbs, and stuck-on messes using safe, non-toxic products that leave your cabinets clean and refreshed. By clearing away grime and buildup, we help restore order and make your kitchen cabinets more functional, hygienic, and ready to use.</p>
-                                    <ul class="list-inline">
-                                        <li class="additional-service-price">
-                                            <strong>Base Price:</strong>
-                                            Ranges from $35 to $120 
-                                        </li>
-                                        <li>
-                                            <!-- <strong>Category:</strong> -->
-                                            Price adjusted based on number of cabinets, level of cleanliness, and estimated time to clean.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close 
-                                    </button>
-                                </div>
-                            </div>
+    </div>
+</div>
+
+<!-- Utah County Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body text-center">
+                            <h2 class="text-uppercase">Utah County</h2>
+                            <p class="item-intro text-muted">Cities we proudly serve in Utah County.</p>
+                            <ul class="list-unstyled" style="columns: 2; text-align: center; line-height: 2.5; margin-top: 1.5rem;">
+                                <li>Alpine</li>
+                                <li>American Fork</li>
+                                <li>Cedar Hills</li>
+                                <li>Eagle Mountain</li>
+                                <li>Highland</li>
+                                <li>Lehi</li>
+                                <li>Lindon</li>
+                                <li>Mapleton</li>
+                                <li>Orem</li>
+                                <li>Payson</li>
+                                <li>Pleasant Grove</li>
+                                <li>Provo</li>
+                                <li>Salem</li>
+                                <li>Saratoga Springs</li>
+                                <li>Spanish Fork</li>
+                                <li>Springville</li>
+                                <li>Vineyard</li>
+                            </ul>
+                            <p class="mt-5" style="color: #fc2ec1;"><strong>Don't see your city? Give us a call — we may still be able to help!</strong></p>
+                            <button class="btn btn-primary btn-xl text-uppercase mt-4" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Bathroom Cabinets</h2>
-                                    <p class="item-intro text-muted">Fresh, functional, and ready for your routine.</p>
-                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." /> -->
-                                    <p>We safely remove dust, grime, and buildup using non-toxic products that leave your cabinets clean, fresh, and sanitary. By restoring order inside, we make your bathroom storage more hygienic, accessible, and easier to use every day.</p>
-                                    <ul class="list-inline">
-                                        <li class="additional-service-price">
-                                            <strong>Base Price:</strong>
-                                            $35
-                                        </li>
-                                        <li>
-                                            <!-- <strong>Category:</strong> -->
-                                            Price adjusted based on number of cabinets, level of cleanliness, and estimated time to clean.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close 
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Windowsills</h2>
-                                    <p class="item-intro text-muted">Cleaned tracks, fresh sills, and a brighter space to enjoy every season.</p>
-                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." /> -->
-                                    <p>We clear out dust, dirt, and dead bugs from your windowsills and tracks using safe, effective methods that leave the space clean and functional. Whether it’s spring cleaning or part of a year-round routine, this service helps brighten your home, reduce allergens, and make every window feel fresher and more inviting.</p>
-                                    <ul class="list-inline">
-                                        <li class="additional-service-price">
-                                            <strong>Base Price:</strong>
-                                            $2/sill & track
-                                        </li>
-                                        <li>
-                                            <!-- <strong>Category:</strong> -->
-                                            Pricing may be adjusted to accomodate windowsill size and level of grime.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close 
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Baseboards</h2>
-                                    <p class="item-intro text-muted">Small detail, big difference—because clean starts from the ground up.</p>
-                                    <!-- <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." /> -->
-                                    <p>We gently remove dust, smudges, and buildup from your baseboards to instantly brighten your space and give your room a polished refresh. It’s a small detail that makes a big difference—proving that even the simplest cleanups can go a long way in making your home feel fresh and cared for.</p>
-                                    <ul class="list-inline">
-                                        <li class="additional-service-price">
-                                            <strong>Base Price:</strong>
-                                            $2/wall
-                                        </li>
-                                        <li>
-                                            <!-- <strong>Category:</strong> -->
-                                            Pricing may be adjusted to accomodate baseboard size and level of grime.
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close 
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
+        <!-- Swiper JS-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Swiper Init -->
+        <script>
+            const swiper = new Swiper('.testimonialsSwiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    }
+                }
+            });
+        </script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
@@ -695,94 +1082,382 @@
               }
             });
           </script>
-          
-    
-    <!-- Basic Refresh Modal -->
+
+ <!-- Housekeeping Modal -->
+<div class="modal fade" id="serviceModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content text-center">
+            <div class="modal-header border-0 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <!-- REPLACE: update image to your Housekeeping icon -->
+                    <img src="assets/img/Sparkle_Transparent.png" alt="" class="modal-icon me-1">
+                    <h2 class="modal-title">Housekeeping</h2>
+                </div>
+            </div>
+            <div class="modal-body text-start">
+                <div class="modal-list-wrapper mx-auto text-start">
+                    <p>Our housekeeping service is designed to help you maintain a consistently clean, comfortable home without the stress of keeping up with it all yourself. Whether you prefer weekly, biweekly, or monthly service, we tailor each visit to your home's needs and your lifestyle.</p>
+                    <p>This service focuses on maintaining cleanliness and preventing buildup so your space always feels fresh and welcoming. Typical visits include dusting, vacuuming, mopping, bathroom cleaning, kitchen cleaning, surface wipe-downs, and general tidying. We pay attention to the details that make a difference while creating a routine that works best for you and your family.</p>
+                    <br>
+                    <p class="lead" style="color: #fc2ec1;">Custom quote — priced by project.</p>
+                    <p>Call, text, or schedule a service to get your free quote!</p>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <i class="fas fa-xmark me-1"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>         
+<!-- Deep Cleaning Modal -->
+<div class="modal fade" id="serviceModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content text-center">
+            <div class="modal-header border-0 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <!-- REPLACE: update image to your Deep Cleaning icon -->
+                    <img src="assets/img/Diamond_Transparent.png" alt="" class="modal-icon me-1">
+                    <h2 class="modal-title">Deep Cleaning</h2>
+                </div>
+            </div>
+            <div class="modal-body text-start">
+                <div class="modal-list-wrapper mx-auto text-start">
+                    <p>Deep cleaning is a more detailed and intensive service that targets buildup, neglected areas, and hard-to-reach spaces throughout the home. This service is ideal for first-time cleanings, seasonal resets, preparing for guests, or anytime your home needs extra attention beyond routine upkeep.</p>
+                    <p>In addition to standard cleaning tasks, deep cleaning may include baseboards, doors, blinds, light fixtures, detailed bathroom scrubbing, kitchen degreasing, and other high-detail areas. Because every home is different, we customize the service based on your priorities and the condition of the space to ensure the areas that matter most receive extra care.</p>
+                    <br>
+                    <p class="lead" style="color: #fc2ec1;">Custom quote — priced by project.</p>
+                    <p>Call, text, or schedule a service to get your free quote!</p>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <i class="fas fa-xmark me-1"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Move In/Out Cleaning Modal -->
+<div class="modal fade" id="serviceModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content text-center">
+            <div class="modal-header border-0 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <!-- REPLACE: update image to your Move In/Out icon -->
+                    <img src="assets/img/Flower_Transparent.png" alt="" class="modal-icon me-1">
+                    <h2 class="modal-title">Move In/Out Cleaning</h2>
+                </div>
+            </div>
+            <div class="modal-body text-start">
+                <div class="modal-list-wrapper mx-auto text-start">
+                    <p>Moving is stressful enough without having to worry about cleaning. Our move in/out cleaning service is designed to leave homes fresh, sanitized, and ready for their next chapter—whether you're preparing to move into a new space or leaving one behind.</p>
+                    <p>This service includes detailed cleaning of kitchens, bathrooms, floors, appliances, cabinets, and other frequently overlooked areas that often need extra attention during a move. We focus on creating a clean, polished space that's ready for new occupants, listing photos, realtor walkthroughs, or final inspections while helping reduce some of the stress that comes with the moving process.</p>
+                    <br>
+                    <p class="lead" style="color: #fc2ec1;">Custom quote — priced by project.</p>
+                    <p>Call, text, or schedule a service to get your free quote!</p>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <i class="fas fa-xmark me-1"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Commercial Cleaning Modal -->
+<div class="modal fade" id="serviceModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content text-center">
+            <div class="modal-header border-0 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <!-- REPLACE: update image to your Commercial Cleaning icon -->
+                    <img src="assets/img/Sparkle_Transparent.png" alt="" class="modal-icon me-1">
+                    <h2 class="modal-title">Commercial Cleaning</h2>
+                </div>
+            </div>
+            <div class="modal-body text-start">
+                <div class="modal-list-wrapper mx-auto text-start">
+                    <p>A clean business creates a better experience for employees, customers, and clients alike. Our commercial cleaning services are customized to fit the unique needs of your workspace, whether you operate an office, retail store, studio, or other professional environment.</p>
+                    <p>Services may include restroom cleaning, trash removal, floor care, dusting, sanitizing high-touch surfaces, breakroom cleaning, and general maintenance cleaning. We work with businesses to create a cleaning schedule that minimizes disruption while helping maintain a professional, welcoming atmosphere.</p>
+                    <br>
+                    <p class="lead" style="color: #fc2ec1;">Custom quote — priced by project.</p>
+                    <p>Call, text, or schedule a service to get your free quote!</p>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <i class="fas fa-xmark me-1"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Short-Term Rental Cleaning Modal -->
+<div class="modal fade" id="serviceModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content text-center">
+            <div class="modal-header border-0 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <!-- REPLACE: update image to your Short-Term Rental icon -->
+                    <img src="assets/img/Diamond_Transparent.png" alt="" class="modal-icon me-1">
+                    <h2 class="modal-title">Short-Term Rental Cleaning</h2>
+                </div>
+            </div>
+            <div class="modal-body text-start">
+                <div class="modal-list-wrapper mx-auto text-start">
+                    <p>Reliable turnover cleaning is essential for maintaining great reviews and a positive guest experience. Our short-term rental cleaning service is designed specifically for Airbnb and vacation rental hosts who need dependable, detail-oriented cleanings between stays.</p>
+                    <p>We focus on preparing your property to be fully guest-ready by cleaning and sanitizing bathrooms and kitchens, refreshing bedrooms and living spaces, and checking for overlooked messes or restocking needs. Laundry services can also be included—washing, drying, folding linens, and remaking beds so your rental is clean, organized, and ready for every arrival. We understand the importance of timing, consistency, and presentation when it comes to short-term rentals.</p>
+                    <br>
+                    <p class="lead" style="color: #fc2ec1;">Custom quote — priced by project.</p>
+                    <p>Call, text, or schedule a service to get your free quote!</p>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <i class="fas fa-xmark me-1"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Organization Modal -->
+<div class="modal fade" id="serviceModal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content text-center">
+            <div class="modal-header border-0 d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                    <!-- REPLACE: update image to your Organization icon -->
+                    <img src="assets/img/Flower_Transparent.png" alt="" class="modal-icon me-1">
+                    <h2 class="modal-title">Organization</h2>
+                </div>
+            </div>
+            <div class="modal-body text-start">
+                <div class="modal-list-wrapper mx-auto text-start">
+                    <p>Our organization services are designed to help simplify your home and create systems that are both functional and easy to maintain. Whether you're overwhelmed by clutter or simply want your spaces to feel more efficient, we work with you to create personalized solutions that fit your lifestyle.</p>
+                    <p>We can help organize closets, pantries, kitchens, playrooms, storage areas, and more by sorting, decluttering, and creating practical organization systems. The goal is not just to make your space look better, but to help it function better day-to-day so your home feels calmer and more manageable.</p>
+                    <p>Unlike our cleaning services, organization projects are typically billed at an hourly rate rather than a flat service quote. Pricing varies depending on the size of the space, level of clutter, and overall project intensity, so we provide a custom estimate before getting started to ensure the service fits your needs and goals.</p>
+                    <br>
+                    <p class="lead" style="color: #fc2ec1;">Custom quote — priced by the hour.</p>
+                    <p>Call, text, or schedule a service to get your free quote!</p>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                        <i class="fas fa-xmark me-1"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+<!-- Team Modal 1 - Abby -->
+<div class="modal fade" id="teamModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center p-4">
+            <img class="mx-auto rounded-circle pink-border mt-3" src="assets/img/AbbyPendleton.jpg" alt="Abby Pendleton" style="width: 150px; height: 150px; object-fit: cover;" />
+            <h3 class="mt-3">Abby Pendleton</h3>
+            <p class="text-muted">Founder & CEO</p>
+            <div class="modal-body text-center">
+                <p>Hi friends, I'm Abby! I'm a Utah native who has lived all around the US, and no matter where life has taken me, I've always believed that a clean, calm home makes everything better. I graduated from BYU studying Exercise & Wellness with a minor in Business, but my real passion has always been people — helping as many of them as possible live with less stress and more happiness is something I take seriously both personally and professionally.</p>
+                    <p>I started NeatNest because I'm probably one of the few people who genuinely doesn't mind cleaning — and I absolutely love organizing. Life gets busy and overwhelming, and I wanted to create something that truly takes one thing off your plate. Everyone deserves a space that feels calm and comfortable, not chaotic.</p>
+                    <p>When I'm not running NeatNest you'll find me outdoors, cooking good food, or focusing on health and wellness. I bring that same energy and care into everything we do here.</p>
+                    <p>I'm here to help you spend less time stressing about messes and more time doing what you actually enjoy. If that sounds like something you need, reach out — let's make your space feel fresh again.</p>
+                <p style="color: #fc2ec1;"><em><!--You can update this bio with anything personal you'd like to share!--></em></p>
+            </div>
+            <div class="text-center mt-3 mb-4">
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Modal 2 - Madi -->
+<div class="modal fade" id="teamModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center p-4">
+            <img class="mx-auto rounded-circle pink-border mt-3" src="assets/img/MadiThompson.PNG" alt="Madi Thompson" style="width: 150px; height: 150px; object-fit: cover;" />
+            <h3 class="mt-3">Madi Thompson</h3>
+            <p class="text-muted">Lead Cleaner</p>
+            <p style="color: #fc2ec1; font-size: 0.9rem;"><strong>Serving: Weber & Davis County</strong></p>
+            <div class="modal-body text-center">
+                <p>Madi is a Utah girl through and through, having spent most of her life here in the Beehive State. She married her best friend, Levi, in 2025 and spends her free time camping, fishing, trying new recipes, and crafting. Faith and family are at the center of everything she does. Cleaning has become something Madi genuinely enjoys — especially witnessing the before and after transformation that comes with each job. She believes a fresh, tidy home brings real peace, and she loves being able to provide that for NeatNest clients. For Madi, being part of a team that truly prioritizes and cares for every client makes this the perfect place to be.</p>
+                <p style="color: #fc2ec1;"><em><!--Update this with Madi's areas served and anything personal she'd like to share!--></em></p>
+            </div>
+            <div class="text-center mt-3 mb-4">
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Modal 3 - Reagan -->
+<div class="modal fade" id="teamModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center p-4">
+            <img class="mx-auto rounded-circle pink-border mt-3" src="assets/img/ReaganBolos.jpg" alt="Reagan Bolos" style="width: 150px; height: 150px; object-fit: cover;" />
+            <h3 class="mt-3">Reagan Bolos</h3>
+            <p class="text-muted">Cleaner</p>
+            <p style="color: #fc2ec1; font-size: 0.9rem;"><strong>Serving: Weber & Davis County</strong></p>
+            <div class="modal-body text-center">
+                <p>Reagan is currently studying Public Relations and Sport Coaching at Weber State University. Outside of work she enjoys swing dancing, staying active at the gym, and spending quality time with her family. One of her favorite parts of the job is cleaning bathrooms — she loves the satisfying before and after transformation that comes with every visit. Reagan is a great fit for the NeatNest team because of the flexibility it offers, allowing her to balance work alongside her studies and other commitments.</p>
+                <p style="color: #fc2ec1;"><em><!--Update this with Reagan's areas served and anything personal she'd like to share!--></em></p>
+            </div>
+            <div class="text-center mt-3 mb-4">
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Modal 4 - Sofi -->
+<div class="modal fade" id="teamModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center p-4">
+            <img class="mx-auto rounded-circle pink-border mt-3" src="assets/img/SofiZendejas.png" alt="Sofi Zendejas" style="width: 150px; height: 150px; object-fit: cover;" />
+            <h3 class="mt-3">Sofi Zendejas</h3>
+            <p class="text-muted">Cleaner</p>
+            <p style="color: #fc2ec1; font-size: 0.9rem;"><strong>Serving: Weber & Davis County</strong></p>
+            <div class="modal-body text-center">
+                <p>Sofi is a Weber State University student originally from California who brings a bright and warm energy to the NeatNest team. She is close with her family and especially loves spending time with her mom and sisters. Sofi finds cleaning genuinely therapeutic — there's something about transforming a space that brings her a sense of calm and satisfaction. That natural love for the process shows in the care and intention she puts into every home she works in, and clients can feel that the moment she walks through the door.</p>
+                <p style="color: #fc2ec1;"><em><!--Update this with Sofi's areas served and anything personal she'd like to share!--></em></p>
+            </div>
+            <div class="text-center mt-3 mb-4">
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Modal 5 - Morgan -->
+<div class="modal fade" id="teamModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content text-center p-4">
+            <img class="mx-auto rounded-circle pink-border mt-3" src="assets/img/MorganStoddard.jpg" alt="Morgan Stoddard" style="width: 150px; height: 150px; object-fit: cover;" />
+            <h3 class="mt-3">Morgan Stoddard</h3>
+            <p class="text-muted">Lead Cleaner</p>
+            <p style="color: #fc2ec1; font-size: 0.9rem;"><strong>Serving: Utah County</strong></p>
+            <div class="modal-body text-center">
+                <p>Morgan is an online student at BYU-Idaho studying Marriage and Family Studies. When she's not working or hitting the books, you'll find her outdoors, doing nails, baking, or hanging out with friends. Morgan brings a contagious positive energy and enthusiasm to everything she does — and the NeatNest team and clients feel it every single day. For Morgan, cleaning is more than just a job — it's genuinely stress relieving and gives her a real sense of accomplishment. That love for the process, paired with her vibrant personality, shows in the quality and care she brings to every home she works in.</p>
+                <p style="color: #fc2ec1;"><em> <!--Update this with Morgan's areas served and anything personal she'd like to share!--></em></p>
+            </div>
+            <div class="text-center mt-3 mb-4">
+                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                    <i class="fas fa-xmark me-1"></i>
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div> 
+    <!-- Basic Refresh Modal 
 <div class="modal fade" id="serviceModal1" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content text-center">
         <div class="modal-header border-0 d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
               <img src="assets/img/Flower_Transparent.png" alt="" class="modal-icon me-1">
-              <h2 class="modal-title">Basic Refresh</h2>
+              <h2 class="modal-title">Organization</h2>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>
-          <!-- service list -->
+          </div> -->
+          <!-- service list
         <div class="modal-body text-start">
             <div class="mx-auto text-start" style="max-width: 500px; line-height: 2;">
-          <p class="lead" style="font-size: 1.65rem;">Package Details:</p>
+          <p class="lead" style="font-size: 1.65rem;">You pick your space!</p>
             <ul>
-                <li class="list-title">Full Kitchen</li>
+                <li class="list-title">Common Areas Include:</li>
                     <ul>
-                        <li>Sink Scrubbed</li>
-                        <li>Countertops Wiped/Sanitized</li>
-                        <li>Outside of Oven Wiped/Cleaned</li>
-                        <li>Outside of Fridge Wiped/Cleaned</li>
-                        <li>Outside of Dishwasher Wiped/Cleaned</li>
-                        <li>Stovetop Cleaned</li>
-                        <li>Interior & Exterior of Microwave Cleaned</li>
-                        <li>Floors Swept & Mopped</li>
-                        <li>Rugs Vacuumed</li>
-                        <li>Exterior of Cupboards Wiped/Cleaned</li>
-                        <li>Fixtures Dusted/Cleaned</li>
+                        <li>Pantry</li>
+                        <li>Closets & Cabinets</li>
+                        <li>Storage Room</li>
+                        <li>Craft Room</li>
+                        <li>Sewing Room</li>
+                        <li>Playroom</li>
+                        <li>Kids Room</li>
+                        <li>Office</li>
                     </ul>
-                <li class="list-title">Full Bathroom</li>
-                    <ul>
-                        <li>Floors Swept & Mopped</li>
-                        <li>Toilet Scrubbed</li>
-                        <li>Toilet Surfaces Wiped</li>
-                        <li>Shower/Bathtub Scrubbed</li>
-                        <li>Shower Curtain Cleaned</li>
-                        <li>Mirrors Cleaned</li>
-                        <li>Fixtures Dusted/Cleaned</li>
-                        <li>Countertops Wiped/Cleaned</li>
-                        <li>Exterior of Cabinets Wiped/Cleaned</li>
-                        <li>Rugs Vacuumed</li>
-                        <li>Cracks & Crevices Cleaned</li>
-                    </ul>
-                <li class="list-title">Main Living Area</li>
-                    <ul>
-                        <li>Carpets Vacuumed</li>
-                        <li>Rugs Vacuumed</li>
-                        <li>Hard Floors Swepts & Mopped</li>
-                        <li>Fixtures Dusted/Cleaned</li>
-                        <li>Shelving Dusted/Cleaned</li>
-                        <li>Furniture Cleaned (Vacuumed/Wiped – Dependant on Upholstery) </li>
-                    </ul>
-                <li class="list-title">+ 2 Additional Areas of Choice</li>
             </ul>
-            <p class="lead" style="font-size: 1.65rem;">Package typically starts at $199.</p>
-            <p style="color: #fc2ec1;">Call, text, or schedule a service to get a free quote!</p>
-                <ul>
-                    <li class="list-title">Pricing adjusted per</li>
-                        <ul>
-                            <li>Home size</li>
-                            <li>Custom requests</li>
-                            <li>Extra Services</li>
-                        </ul>
-                </ul>
+
+        <p class="lead" style="font-size: 1.65rem;">What to Expect.</p>
+            <ul>
+                <p class="list-title" style="text-align: left;">1. Choose Your Space(s)</p>
+                    <ul>
+                        <li>Start by selecting the areas you’d like help organizing—kitchens, closets, pantries, offices, and more.</li>
+                    </ul>
+                    <br>
+                <p class="list-title" style="text-align: left;">2. Schedule a Consultation</p>
+                    <ul>
+                        <li>We’ll meet in person or by phone to discuss your goals, style, and expectations.</li>
+                        <p style="font-style:italic">Remote consultation? You'll just send photos of each area.</p>
+                    </ul>    
+                 <p class="list-title" style="text-align: left;">3. Receive a Custom Quote</p>
+                    <ul>
+                        <li>You'll receive a personalized quote based on the size, scope, and estimated time to complete the project.</li>
+                    </ul> 
+                    <br>
+                <p class="list-title" style="text-align: left;">4. Use What You Have (or We'll Bring the Perfect Fit) </p>
+                    <ul>
+                        <li>Have your own bins and baskets? Great!</li>
+                        <p>Need help selecting products? We’ll source custom organizers that fit your space and style.</p>
+                    </ul> 
+            <p class="lead" style="font-size: 1.25rem;">Call, text, or schedule a service to get a free quote!</p>
+            <p style="color: #fc2ec1; font-weight: 500; font-style: italic;">...and say hello  to your new space!</p>
+            <br><br><br>
             </div>
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Signature Refresh Modal -->
+  <!-- Signature Refresh Modal 
 <div class="modal fade" id="serviceModal2" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content text-center">
         <div class="modal-header border-0 d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
               <img src="assets/img/Sparkle_Transparent.png" alt="" class="modal-icon me-1">
-              <h2 class="modal-title">Signature Refresh</h2>
+              <h2 class="modal-title">Housekeeping</h2>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>  
-           <!-- service list -->
+          </div> -->
+           <!-- service list 
         <div class="modal-body text-start">
             <div class="modal-list-wrapper mx-auto text-start">
-          <p class="lead" style="font-size: 1.65rem;">Package Details:</p>
+          <p class="lead" style="font-size: 1.65rem;">What to Expect.</p>
+                <ul>
+                    <p class="list-title" style="text-align: left;">1. Schedule A Consultation</p>
+                        <ul>
+                            <li>We’ll meet in person or by phone to discuss your space, goals, and cleaning preferences.</li>
+                            <p style="font-style:italic">Remote consultation? You'll just send photos of each area.</p>
+                        </ul>
+                        <br>
+                     <p class="list-title" style="text-align: left;">2. Get A Custom Quote</p>
+                        <ul>
+                            <li>We’ll meet in person or by phone to discuss your space, goals, and cleaning preferences.</li>
+                            <p style="font-style:italic">Remote consultation? You'll just send photos of each area.</p>
+                        </ul>
+                        <br>
+                </ul>
                 <ul class="modal-list" style="line-height: 2;">
                     <li class="list-title">Full Kitchen + Kitchenette</li>
                         <ul>
@@ -837,20 +1512,20 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
-    <!-- Luxe Refresh Modal -->
+    <!-- Luxe Refresh Modal 
 <div class="modal fade" id="serviceModal3" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content text-center">
         <div class="modal-header border-0 d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
               <img src="assets/img/Diamond_Transparent.png" alt="" class="modal-icon me-1">
-              <h2 class="modal-title">Luxe Refresh</h2>
+              <h2 class="modal-title">Deep Cleaning</h2>
             </div>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          </div>  
-         <!-- service list -->
+          </div> -->
+         <!-- service list 
         <div class="modal-body text-start">
             <div class="modal-list-wrapper mx-auto text-start">
                 <p class="lead font-size: 1.65rem">Package Details:</p>
@@ -908,7 +1583,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   
     </body>
 </html>

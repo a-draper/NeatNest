@@ -10905,11 +10905,11 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: #fff;
+  color: #fc2ec1;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -11262,7 +11262,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #fc2ec1;
-  background-image: url("../assets/img/FlowerFieldBackground.jpg");
+  /* background-image: url("../assets/img/FlowerFieldBackground.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11334,15 +11334,13 @@ section#contact form#contactForm :-ms-input-placeholder {
     color: #fc2ec1 !important;
 }
 
-
-
 .nav-link {
-  color: white !important; /* default color */
+  color: #fc2ec1 !important; /* default color */
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #fc2ec1 !important; /* pink on hover */
+  color: white !important; /* pink on hover */
 }
 
 .btn-primary {
@@ -11476,4 +11474,66 @@ a[href^="mailto"] {
     font-size: 1rem;
     padding: 0 1rem;
   }
+}
+
+/* How It Works Section */
+.step-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fc2ec1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-circle span {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+/* Testimonials Section */
+.testimonialsSwiper {
+  padding: 1rem 1rem 3.5rem 1rem !important;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-stars {
+  color: #fc2ec1;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: #555;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.testimonial-author {
+  font-weight: 700;
+  color: #fc2ec1;
+  margin-bottom: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fc2ec1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fc2ec1 !important;
 }
