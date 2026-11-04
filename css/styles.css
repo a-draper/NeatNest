@@ -11585,7 +11585,7 @@ a[href^="mailto"] {
 }
 @media (max-width: 768px) {
   header.masthead {
-    background-position: 90% center;
+    background-position: 80% center;
   }
 }
 @media (max-width: 768px) {
