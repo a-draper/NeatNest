@@ -11648,3 +11648,18 @@ a[href^="mailto"] {
 .team-member a[data-bs-toggle="modal"]:hover img {
   transform: scale(1.04);
 }
+@media (max-width: 991px) {
+  #mainNav .navbar-brand img {
+    height: 2rem;
+    width: auto;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  #mainNav .navbar-toggler {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.7rem;
+    margin-left: auto;
+  }
+}
