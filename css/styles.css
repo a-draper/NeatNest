@@ -11650,12 +11650,12 @@ a[href^="mailto"] {
 }
 @media (max-width: 991px) {
   .navbar-brand img {
-    height: 2.5rem !important;
+    height: 3rem !important;
     width: auto !important;
   }
   .navbar-brand,
   .navbar-brand span {
-    font-size: 0.95rem !important;
+    font-size: 1.15rem !important;
   }
   .navbar-toggler {
     padding: 0.4rem 0.6rem !important;
